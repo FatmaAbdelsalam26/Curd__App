@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="css/bootstrap.min.css">
+    <link rel="stylesheet"herf="css/all.min.css">
+   <link rel="stylesheet"href="css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,100;1,300;1,700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+   
+    <title>Crud App</title>
+</head>
+<body>
+    <div class="w-75 mx-auto my-5">
+        <label for="productNameInput">ProductName :</label>
+        <input type="text"class="form-control mb-3" id="productNameInput">
+       
+        <label for="productPriceInput">ProductPrice :</label>
+        <input type="number"class="form-control mb-3" id="productPriceInput">
+        
+        <label for="productCategoryInput">ProCategory :</label>
+        <input type="text"class="form-control mb-3" id="productCategoryInput">
+        
+        <label for="productDescriptionInput">ProductDescription :</label>
+        <textarea type="text"class="form-control mb-3" id="productDescriptionInput"></textarea>
+        
+        <button onclick="addProduct();" class="btn btn-info"id="btnProduct">create</button>
+    </div>
+    <div class="container text-center">
+        <div class="row">
+    <div class="w-75 mx-auto py-5 col">
+        <input oninput="searchInput(this.value)" type="text" class="form-control w-75 mx-auto my-5"id="searchInput"placeholder="Search">
+        <table class="table text-center col-sm-6">
+            
+            <thead>
+                
+                <th>index</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Delete</th>
+                <th>Update</th>
+                
+            </thead>
+            
+            <tbody id="TableBody"></tbody>
+        </table>
+        </div>
+    </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
